@@ -1,0 +1,138 @@
+{
+  "lecture_id": "d54dc098-ffb9-4e6b-bdd6-551a1fde0f88",
+  "generated_at": "2025-09-28T01:28:53.627488+00:00",
+  "counts": {
+    "total_clips": 12,
+    "by_type": {
+      "Definition": 3,
+      "Example": 4,
+      "Process": 2,
+      "Summary": 1,
+      "Question": 2
+    }
+  },
+  "clips": [
+     {
+      "index_id": 1,
+      "clip_id": "b930ced8-9614-4be1-b26a-420cc62941ef",
+      "start_s": 340.84,
+      "end_s": 369.87,
+      "concept_type": "Process",
+      "concept_title": "Process: Programming Fundamentals",
+      "summary": "This segment covers process related to programming concepts and computational thinking.",
+      "score": 0.8,
+      "duration": 29.03,
+      "url": "https://sunhacks25.s3.us-east-1.amazonaws.com/vid1/clip_09_Process_Process-_Programming_Fundamentals.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2DIH4ZVCQZD%2F20250928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250928T164615Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=2f30cf82083776ac9250b3f81ea596bda5977e600f7e60e67a4f2b7e7092ec24"
+    },
+     {
+      "index_id": 2,
+      "clip_id": "cf438706-a51a-4461-ada8-e6117e689f1d",
+      "start_s": 717.31,
+      "end_s": 734.86,
+      "concept_type": "Question",
+      "concept_title": "Question: Programming Fundamentals",
+      "summary": "This segment covers question related to programming concepts and computational thinking.",
+      "score": 0.81,
+      "duration": 17.55,
+      "url": "https://sunhacks25.s3.us-east-1.amazonaws.com/vid1/clip_08_Question_Question-_Programming_Fundamentals.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2DIH4ZVCQZD%2F20250928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250928T164614Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ac605966203d92eb642d7fd41dbf1b5d801e9240eec9d65a58192ecff38e265b"
+    },
+     {
+      "index_id": 3,
+      "clip_id": "590b7aff-e428-4633-b91d-6b646e2d19de",
+      "start_s": 739.66,
+      "end_s": 769.94,
+      "concept_type": "Summary",
+      "concept_title": "Summary: Algorithm Design",
+      "summary": "This segment covers summary related to programming concepts and computational thinking.",
+      "score": 0.86,
+      "duration": 30.28,
+      "url": "https://sunhacks25.s3.us-east-1.amazonaws.com/vid1/clip_06_Summary_Summary-_Algorithm_Design.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2DIH4ZVCQZD%2F20250928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250928T164612Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=034cd6755d3a67f92a17193c2d087099a44b0c823aecb1a5d0f61b1fc8af817b"
+    },
+        {
+      "index_id": 4,
+      "clip_id": "3b50a321-8a54-4560-86f7-f48e826e86a4",
+      "start_s": 879.74,
+      "end_s": 910.46,
+      "concept_type": "Process",
+      "concept_title": "Process: Algorithm Design",
+      "summary": "This segment covers process related to programming concepts and computational thinking.",
+      "score": 0.91,
+      "duration": 30.72,
+      "url": "https://sunhacks25.s3.us-east-1.amazonaws.com/vid1/clip_04_Process_Process-_Algorithm_Design.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2DIH4ZVCQZD%2F20250928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250928T164611Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=0cf1d55ce05b210fa04aea9d43cde731ca714094960b1076a3d2e3a9edae3acb"
+    },
+    {
+      "index_id": 5,
+      "clip_id": "32c363c0-cec1-471a-b0c2-ca101d28d2af",
+      "start_s": 1056.47,
+      "end_s": 1075.89,
+      "concept_type": "Definition",
+      "concept_title": "Definition: Computer Science Concepts",
+      "summary": "This segment covers definition related to programming concepts and computational thinking.",
+      "score": 0.93,
+      "duration": 19.42,
+      "url": "https://sunhacks25.s3.us-east-1.amazonaws.com/vid1/clip_03_Definition_Definition-_Computer_Science_Concepts.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2DIH4ZVCQZD%2F20250928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250928T164610Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=19c1f2c41a6eb330718417503fab0d282ed6a57341ae2d230b813d840304f330"
+    },
+    {
+      "index_id": 6,
+      "clip_id": "5e804c39-5263-4265-92e3-496cf0b718b0",
+      "start_s": 1279.56,
+      "end_s": 1297.16,
+      "concept_type": "Question",
+      "concept_title": "Question: Algorithm Design",
+      "summary": "This segment covers question related to programming concepts and computational thinking.",
+      "score": 0.8,
+      "duration": 17.6,
+      "url": "https://sunhacks25.s3.us-east-1.amazonaws.com/vid1/clip_10_Question_Question-_Algorithm_Design.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2DIH4ZVCQZD%2F20250928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250928T164615Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ff8b912aff4b1246137b0598cf29b774e62aba78f2596b694015e3d4e91ba1f3"
+    },
+    {
+      "index_id": 7,
+      "clip_id": "868eb5f9-555a-4a9d-ad62-151ff19bf6a0",
+      "start_s": 1437.63,
+      "end_s": 1461.1,
+      "concept_type": "Example",
+      "concept_title": "Example: Python Basics",
+      "summary": "This segment covers example related to programming concepts and computational thinking.",
+      "score": 0.9,
+      "duration": 23.47,
+      "url": "https://sunhacks25.s3.us-east-1.amazonaws.com/vid1/clip_05_Example_Example-_Python_Basics.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2DIH4ZVCQZD%2F20250928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250928T164611Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=837475ff62b6a0343df26a83ac2db9de3296a37cfc28b692ab9525e4e04f6e46"
+    },
+    {
+      "index_id": 8,
+      "clip_id": "0c699c0c-a1c2-46cb-ae1a-34db2e7899c7",
+      "start_s": 1640.59,
+      "end_s": 1669.24,
+      "concept_type": "Definition",
+      "concept_title": "Definition: Algorithm Design",
+      "summary": "This segment covers definition related to programming concepts and computational thinking.",
+      "score": 0.95,
+      "duration": 28.65,
+      "url": "https://sunhacks25.s3.us-east-1.amazonaws.com/vid1/clip_01_Definition_Definition-_Algorithm_Design.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2DIH4ZVCQZD%2F20250928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250928T164608Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=50246c17f739bf4af3ca174361307e0def8471dc0d78b9ff1ed0103055db5a00"
+    },
+    {
+      "index_id": 9,
+      "clip_id": "aa98f670-4d6f-47db-93fa-33a7b00dc88d",
+      "start_s": 2896.61,
+      "end_s": 2924.16,
+      "concept_type": "Example",
+      "concept_title": "Example: Algorithm Design",
+      "summary": "This segment covers example related to programming concepts and computational thinking.",
+      "score": 0.94,
+      "duration": 27.55,
+      "url": "https://sunhacks25.s3.us-east-1.amazonaws.com/vid1/clip_02_Example_Example-_Algorithm_Design.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2DIH4ZVCQZD%2F20250928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250928T164609Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=8aea2e3827af1d8025e54c18da0bc7865e948b20c4db71ed45435d6a2031bd7a"
+    },
+    {
+      "index_id": 10,
+      "clip_id": "a838ff10-72ee-4ea4-a4c9-cd8e3765299c",
+      "start_s": 3340.16,
+      "end_s": 3360.41,
+      "concept_type": "Example",
+      "concept_title": "Example: Computer Science Concepts",
+      "summary": "This segment covers example related to programming concepts and computational thinking.",
+      "score": 0.84,
+      "duration": 20.25,
+      "url": "https://sunhacks25.s3.us-east-1.amazonaws.com/vid1/clip_07_Example_Example-_Computer_Science_Concepts.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2DIH4ZVCQZD%2F20250928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250928T164613Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=0e97a3a70ab71df9b305a1adebc9bf7f6fe071c1f0e629ee699ebc9f03031fb4"
+    }
+   
+    
+  ]
+}
