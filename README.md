@@ -3,13 +3,19 @@
 
 **Built for SunHacks 2025 - Education Track**
 
+
 > Transform any university lecture into focused, AI-powered study clips that save students hours of review time.
 
 🎯 **One-Line Pitch**: StudySlice AI uses artificial intelligence to automatically identify and extract the most important learning moments from university lectures, creating personalized study clips that save students hours of review time.
 
+![StudySlice AI Landing Page](imgs/landing.png)
+
+![StudySlice AI](imgs/app.png)
+
 ## 📋 Project Overview
 
 StudySlice AI is an intelligent educational video processing system that transforms marathon lecture recordings into curated collections of focused study clips. Built during SunHacks 2025, this end-to-end solution uses advanced AI to identify key educational concepts, definitions, examples, and processes across any academic subject.
+![Architecture Diagram](imgs/sunhacks25.png)
 
 ### 🎬 Demo Highlights
 - ✅ Processed real **CS50 lectures from Harvard** (3+ hours)
