@@ -1,6 +1,8 @@
 
 # StudySlice AI - Transform Long Lectures into Smart Study Clips
 
+![StudySlice AI Banner](public/banner.png)
+
 **Built for SunHacks 2025 - Education Track**
 
 
