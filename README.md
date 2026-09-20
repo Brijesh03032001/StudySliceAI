@@ -3,7 +3,7 @@
 
 ![StudySlice AI Banner](public/banner.png)
 
-**Built for SunHacks 2025 - Education Track**
+**Runner-up, SunHacks 2025 - Education Track** (built in a 24-hour hackathon)
 
 
 > Transform any university lecture into focused, AI-powered study clips that save students hours of review time.
@@ -20,23 +20,23 @@ StudySlice AI is an intelligent educational video processing system that transfo
 ![Architecture Diagram](imgs/sunhacks25.png)
 
 ### 🎬 Demo Highlights
-- ✅ Processed real **CS50 lectures from Harvard** (3+ hours)
-- ✅ Generated clips for **MIT Computer Science** content  
+- ✅ Ran the full pipeline on a real, publicly available **CS50 (Harvard) lecture recording** (3+ hours) as a demo/test input
+- ✅ Ran the pipeline on a publicly available **MIT Computer Science lecture recording** as a second demo/test input
 - ✅ Created study materials across **multiple academic subjects**
-- ✅ Built **production-ready AWS infrastructure**
-- ✅ Achieved **85%+ accuracy** in educational concept identification
+- ✅ Built a working AWS pipeline (S3, Transcribe, Lambda orchestration, Gemini analysis, FFmpeg) end-to-end in 24 hours
+- ✅ Filters AI-identified concepts by importance score, keeping only those rated 7/10 or higher before clip selection
 
 ### 🏗️ Architecture Overview
 ```
-Frontend Upload → S3 Storage → AWS Transcribe → AI Analysis → Clip Selection → FFmpeg → Study Clips
+Frontend Upload → S3 Storage → AWS Transcribe → AI Analysis (Google Gemini 2.5 Flash) → Clip Selection → FFmpeg → Study Clips
 ```
 
 ### 📊 Key Achievements
 - **End-to-end pipeline** built in 24 hours
 - **Universal subject support** (CS, Biology, History, Math, etc.)
-- **10 focused study clips** generated per lecture
+- **Up to 10 focused study clips** generated per lecture
 - **Professional video encoding** with multiple quality settings
-- **Scalable cloud architecture** ready for production
+- **Working AWS pipeline** (S3, Transcribe, Lambda orchestration) built and demoed as a hackathon prototype
 
 ## 🚀 Features
 
@@ -78,7 +78,7 @@ Frontend Upload → S3 Storage → AWS Transcribe → AI Analysis → Clip Selec
 - **API Framework**: Python Flask with CORS
 - **AI/ML**: Google Gemini 2.5 Flash
 - **Video Processing**: FFmpeg, yt-dlp
-- **Cloud Infrastructure**: AWS (S3, Transcribe, EC2)
+- **Cloud Infrastructure**: AWS (S3, Transcribe, Lambda, EC2)
 - **File Storage**: AWS S3 with presigned URLs
 - **Authentication**: EC2 IAM roles
 - **Dependencies**: boto3, botocore, python-dotenv
@@ -242,7 +242,7 @@ GET /api/process?uploadId={uploadId}
 - **Smart Transcript Chunking**: 2-minute overlapping windows with 30-second stride for comprehensive coverage
 - **Educational Context AI**: Custom prompts designed specifically for academic content identification
 - **Concept Classification**: Identifies definitions, examples, processes, summaries, and key questions
-- **Quality Scoring**: AI rates concept importance and learning value (85%+ accuracy)
+- **Quality Scoring**: Gemini rates each candidate concept's importance on a 1-10 scale; only concepts scoring 7+ are kept as clip candidates
 - **Universal Subject Support**: Works across CS, Biology, History, Math, and all academic disciplines
 
 ### 🎬 Professional Video Processing
@@ -258,10 +258,11 @@ GET /api/process?uploadId={uploadId}
 - **Confidence Thresholds**: Maintains high quality by filtering low-confidence results
 - **Metadata Generation**: Rich descriptions, categories, and learning objectives
 
-### 🏗️ Production-Ready Architecture
-- **AWS Infrastructure**: S3 storage, Transcribe service, EC2 hosting with IAM roles
-- **Scalable Processing**: Handles 3+ hour lectures efficiently
-- **Error Handling**: Comprehensive error handling with user feedback
+### 🏗️ AWS Pipeline Architecture
+- **What AWS provides**: S3 for video/transcript storage, Transcribe for speech-to-text, Lambda for orchestrating the S3 → Transcribe → analysis handoff, and EC2 for hosting the Flask API
+- **What was custom-built**: the educational concept-identification prompts, the diversity-based clip-selection algorithm, and the FFmpeg encoding pipeline
+- **Scalable Processing**: Handles 3+ hour lecture transcripts
+- **Error Handling**: Try/except handling around AI calls and FFmpeg extraction, with logged failures
 - **Security**: IAM role-based authentication, no hardcoded credentials
 
 ### 🎨 Frontend Experience
@@ -291,7 +292,7 @@ The main processing pipeline (`studyslice_ai.py`) handles the complete transform
 - **Window Size**: 120 seconds (2 minutes) for comprehensive analysis
 - **Stride**: 30 seconds for overlapping coverage
 - **Clip Duration**: 40 seconds optimized for learning retention
-- **Max Clips**: 10-12 focused clips per lecture
+- **Max Clips**: up to 10 focused clips per lecture
 - **Quality Options**: High/medium/low encoding settings
 
 ### Educational Keywords Detection
@@ -327,23 +328,23 @@ python app.py
 - **S3 Bucket**: For video and transcript storage
 - **EC2 Instance**: With IAM role for S3 access
 - **AWS Transcribe**: For automatic speech-to-text
+- **AWS Lambda**: Triggers Transcribe on upload and invokes the analysis step once a transcript is ready
 - **IAM Roles**: Secure access without hardcoded credentials
 
 ## 📁 Project Structure
 
 ```
-studyslice-ai/
-├── StudySliceAI/          # Next.js frontend application
-│   ├── src/app/           # App router pages and API routes
-│   ├── components/        # React components
-│   └── lib/               # Utilities and configurations
-├── app.py                 # Flask backend API (235 lines)
-├── studyslice_ai.py       # Main AI processing pipeline (650+ lines)
-├── requirements.txt       # Python dependencies
-├── PROJECT_PLAN.md        # Original project vision
-├── DEVPOST_SUBMISSION.md  # Complete DevPost submission
-├── study_clips/           # Generated output directory
-└── demo files/            # Sample lecture videos and outputs
+StudySliceAI/
+├── src/app/               # Next.js frontend: pages and API routes
+├── src/components/        # React components
+├── src/lib/               # Frontend utilities and configuration
+├── backend/
+│   ├── app.py             # Flask API: S3 presigned URLs, status, transcript/clip endpoints
+│   ├── studyslice_ai.py   # Core AI pipeline: transcript -> Gemini analysis -> FFmpeg clips
+│   └── requirements.txt   # Python dependencies
+├── public/                # Static assets and sample clip metadata
+├── TheClips/              # Demo clip URL logs from hackathon testing
+└── imgs/                  # Screenshots and architecture diagram
 ```
 
 ## 🎓 Educational Impact
@@ -389,13 +390,13 @@ This project is licensed under the MIT License.
 
 ### Backend & AI Technologies
 - [Google Gemini](https://ai.google.dev/) - Advanced AI for educational analysis
-- [AWS Services](https://aws.amazon.com/) - S3, Transcribe, EC2 infrastructure
+- [AWS Services](https://aws.amazon.com/) - S3, Transcribe, Lambda, EC2 infrastructure
 - [Flask](https://flask.palletsprojects.com/) - Python web framework
 - [FFmpeg](https://ffmpeg.org/) - Professional video processing
 - [boto3](https://boto3.amazonaws.com/) - AWS SDK for Python
 
 ---
 
-**Built with ❤️ for SunHacks 2025 - Education Track**
+**Built with ❤️ for SunHacks 2025 - Education Track** — Runner-up
 
 *StudySlice AI - Making education more accessible, one clip at a time.*
