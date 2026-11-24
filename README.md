@@ -4,6 +4,14 @@
 
 **🥈 Runner-up, Education Track — SunHacks 2025** (built in 24 hours)
 
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org)
+[![Flask](https://img.shields.io/badge/Flask-1F2937?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
+[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge)](https://aws.amazon.com)
+[![Terraform](https://img.shields.io/badge/Terraform-6B35A8?style=for-the-badge&logo=terraform&logoColor=white)](https://terraform.io)
+[![Gemini 2.5 Flash](https://img.shields.io/badge/Gemini_2.5_Flash-6B4FA0?style=for-the-badge&logo=googlegemini&logoColor=white)](https://ai.google.dev)
+[![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white)](https://ffmpeg.org)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-1B6AC6?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/features/actions)
+
 > Turn a 3-hour university lecture into **6–7 minutes** of focused study clips — about a **95% reduction** in review time, while retaining roughly **92%** of full-lecture quiz performance.
 
 ![StudySlice AI Landing Page](imgs/landing.png)
